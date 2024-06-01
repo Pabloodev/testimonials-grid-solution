@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+body {
+    background-color: hsl(210, 46%, 95%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Barlow Semi Condensed;
+    margin: 6vw 10vh;
+}
+
+.cards {
+    display: flex;
+    flex-direction: column;
+    min-width: 375px;
+}
+
+.card {
+    border-radius: 10px;
+    padding: 1.50em 1.75em;
+    margin: 1em;
+    display: grid;
+    grid-template-columns: 45px auto;
+    grid-template-rows: 16px 16px auto minmax(auto, 1fr);
+    grid-template-areas:
+    "img name"
+    "img title"
+    "main-quote main-quote"
+    "testimonial testimonial";
+}
+
+.name {
+    grid-area: name;
+    font-size: .8125rem;
+    font-weight: 500;
+}
+
+span {
+    grid-area: title;
+    font-size: .6875rem;
+    opacity: 50%;
+    margin-top: 2px;
+}
+
+.test-one {
+    grid-area: main-quote;
+    font-size: 1.30rem;
+    font-weight: 600;
+    margin: 1em 0;
+}
+
+.test-two {
+    font-size: .8690rem;
+    grid-area: testimonial;
+    opacity: 70%;
+    line-height: 1.6;
+    font-weight: 500;
+}
+
+img {
+    grid-area: img;
+    height: 30px;
+    width: auto;
+    border-radius: 100%;
+    margin-top: 2px;
+    text-align: center;
+}
+
+.daniel {
+    grid-area: daniel;
+    background-color: hsl(263, 55%, 52%);
+    color: rgb(255, 255, 255);
+    background-image: url(../images/bg-pattern-quotation.svg);
+    background-repeat: no-repeat;
+    background-position: 85% 0%;
+}
+
+.jeanette {
+    grid-area: jeanette;
+}
+
+.jeanette, .kira {
+    background-color: white;
+    color: #48556A
+}
+
+.jonathan {
+    grid-area: jonathan;
+    background-color: hsl(217, 19%, 35%);
+    color: white;
+}
+
+.kira {
+    grid-area: kira;
+}
+
+.patrick {
+    grid-area: patrick;
+    background-color: hsl(219, 29%, 14%);
+    color: white;
+}
+
+.patrick img, .daniel img {
+    border: 2px solid #A775F1;
+}
+
+@media (min-width: 650px) {
+
+    .cards {
+        display: grid;
+        grid-template-columns: minmax(250px, auto) minmax(250px, auto);
+        grid-template-areas:
+            "daniel jeanette"
+            "jonathan patrick"
+            "kira kira";
+        
+        align-items: unset;
+    }
+    }
+
+
+@media (min-width: 1100px) {
+
+    /* multiple cards layout */
+    .cards {
+        display: grid;
+        grid-template-columns: repeat(4, minmax(200px, auto));
+        grid-template-areas:
+        "daniel daniel jonathan kira"
+        "jeanette patrick patrick kira";
+        gap: 2em;
+    }
+
+    .card {
+        margin: 0;
+    }
+
+    .daiel {
+        background-position: 80% 0%;
+    }
+}
