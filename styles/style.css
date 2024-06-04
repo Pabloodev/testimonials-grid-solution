@@ -7,7 +7,7 @@ body {
     align-items: center;
     justify-content: center;
     font-family: Barlow Semi Condensed;
-    margin: 6vw 10vh;
+    height: 100vh;
 }
 
 .cards {
