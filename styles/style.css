@@ -7,14 +7,13 @@ body {
     align-items: center;
     justify-content: center;
     font-family: Barlow Semi Condensed;
-    height: 100vh;
+    margin: 6vw 10vh;
 }
 
 .cards {
     display: flex;
     flex-direction: column;
     min-width: 375px;
-    max-width: 1100px;
 }
 
 .card {
@@ -131,6 +130,7 @@ img {
         "daniel daniel jonathan kira"
         "jeanette patrick patrick kira";
         gap: 2em;
+        max-width: 70%;
     }
 
     .card {
