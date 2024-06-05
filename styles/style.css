@@ -6,14 +6,17 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    font-family: Barlow Semi Condensed;
-    margin: 6vw 10vh;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    padding: 6vw 10vh;
+    margin: 0;
 }
 
 .cards {
     display: flex;
     flex-direction: column;
-    min-width: 375px;
+    width: 100%;
+    max-width: 1200px;
+    box-sizing: border-box;
 }
 
 .card {
