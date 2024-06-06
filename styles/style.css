@@ -10,7 +10,7 @@ body {
 }
 
 .cards {
-    padding: 4em;
+    padding: clamp(4vw, 8.5vw, 20vw);
 }
 
 .card {
