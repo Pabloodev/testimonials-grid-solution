@@ -10,7 +10,7 @@ body {
 }
 
 .cards {
-    padding: 2.5rem 10rem;
+    margin: 9vw;
 }
 
 .card {
@@ -19,7 +19,7 @@ body {
     margin: 1em;
     display: grid;
     grid-template-columns: 45px auto;
-    grid-template-rows: 16px 16px auto minmax(auto, 1fr);
+    grid-template-rows: 10px 10px auto minmax(auto, 1fr);
     grid-template-areas:
     "img name"
     "img title"
